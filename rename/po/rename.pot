@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: getopt.c:777 rename.c:167
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-06-07 00:09+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: rename.c:147
+msgid "hVtluRvs:o:"
+msgstr ""
+
+#: rename.c:149
+msgid "lowcase"
+msgstr ""
+
+#: rename.c:150
+msgid "upcase"
+msgstr ""
+
+#: rename.c:151
+msgid "recursive"
+msgstr ""
+
+#: rename.c:152
+msgid "owner"
+msgstr ""
+
+#: getopt1.c:116 rename.c:153
+msgid "verbose"
+msgstr ""
+
+#: rename.c:154
+msgid "test"
+msgstr ""
+
+#: rename.c:155
+msgid "help"
+msgstr ""
+
+#: rename.c:156
+msgid "version"
+msgstr ""
+
+#: rename.c:157
+msgid "yes"
+msgstr ""
+
+#: rename.c:158
+msgid "no"
+msgstr ""
+
+#: rename.c:208
+msgid "Only super user can change file's owner!\n"
+msgstr ""
+
+#: rename.c:213
+#, c-format
+msgid "No this user in current system [%s]\n"
+msgstr ""
+
+#: rename.c:241 rename.c:253
+#, c-format
+msgid "%s: missing file arguments.\n"
+msgstr ""
+
+#: rename.c:244
+#, c-format
+msgid "%s: too many arguments.\n"
+msgstr ""
+
+#: rename.c:258
+msgid "Out of path!\n"
+msgstr ""
+
+#: rename.c:271
+msgid "stat"
+msgstr ""
+
+#: rename.c:297
+#, c-format
+msgid "Entering directory [%s]\n"
+msgstr ""
+
+#: rename.c:300
+msgid "chdir"
+msgstr ""
+
+#: rename.c:304 rename.c:310 rename.c:345
+msgid "."
+msgstr ""
+
+#: rename.c:305
+msgid "opendir"
+msgstr ""
+
+#: rename.c:310 rename.c:321 rename.c:345
+msgid ".."
+msgstr ""
+
+#: rename.c:323
+#, c-format
+msgid "Leaving directory [%s]\n"
+msgstr ""
+
+#: rename.c:391
+msgid "chown"
+msgstr ""
+
+#: rename.c:508
+msgid "/"
+msgstr ""
+
+#: rename.c:563
+#, c-format
+msgid "Compiling regular expression failed. [%s]\n"
+msgstr ""
+
+#: rename.c:584
+#, c-format
+msgid "rename %-20s => %-20s : "
+msgstr ""
+
+#: rename.c:593
+#, c-format
+msgid "overwrite %s? "
+msgstr ""
+
+#: rename.c:594
+msgid "(Yes, No, All, nO_to_all) "
+msgstr ""
+
+#: rename.c:623
+msgid "tested\n"
+msgstr ""
+
+#: rename.c:627
+msgid "rename"
+msgstr ""
+
+#: rename.c:629
+msgid "ok\n"
+msgstr ""
+
+#: rename.c:639
+msgid "skiped\n"
+msgstr ""
+
+#: rename.c:658
+msgid ""
+"Usage: rename SOURCE DEST\n"
+"   or: rename [OPTION] file ...\n"
+"Rename SOURCE to DEST, or substitute characters match the specified pattern\n"
+"in the filename.\n"
+"\n"
+"  -l, --lowcase            lowcase the file names\n"
+"  -u, --upcase             upcase the file names\n"
+"  -s/PATTERN/STRING[/sw]   replace matching PATTERN with STRING, [sw] is\n"
+"                           [g] replace all occurrences in the filename\n"
+"                           [i] ignore case when searching\n"
+"                           [b] backward searching and replacing\n"
+"                           [s] change file's suffix name\n"
+"                           [r] PATTERN is regular expression\n"
+"                           [e] PATTERN is extended regular expression\n"
+"  -R, --recursive          operate on files and directories recursively\n"
+"  -o, --owner  OWNER       change file's owner (superuser only)\n"
+"  -v, --verbose            display verbose information\n"
+"  -t, --test               test only\n"
+"  -h, --help               display this help and exit\n"
+"  -V, --version            output version information and exit\n"
+"      --yes  --no          force to choose YES or NO when target exists\n"
+"\n"
+"See man page regex(7) for detail information about extended regular "
+"expression.\n"
+"\n"
+"Report bugs to <xuming@users.sourceforge.net>.\n"
+msgstr ""
+
+#: rename.c:685
+#, c-format
+msgid "rename tool version %s\n"
+msgstr ""
+
+#: getopt.c:409
+msgid "POSIXLY_CORRECT"
+msgstr ""
+
+#: getopt.c:589
+msgid "--"
+msgstr ""
+
+#: getopt.c:693
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: getopt.c:718
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: getopt.c:723
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: getopt.c:741 getopt.c:914
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: getopt.c:770
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: getopt.c:774
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: getopt.c:800
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: getopt.c:803
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: getopt.c:833 getopt.c:963
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: getopt.c:898
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""
+
+#: getopt.c:1014 getopt1.c:122
+msgid "abc:d:0123456789"
+msgstr ""
+
+#: getopt.c:1031 getopt1.c:147
+msgid "digits occur in two different argv-elements.\n"
+msgstr ""
+
+#: getopt.c:1033 getopt1.c:149
+#, c-format
+msgid "option %c\n"
+msgstr ""
+
+#: getopt.c:1037 getopt1.c:153
+msgid "option a\n"
+msgstr ""
+
+#: getopt.c:1041 getopt1.c:157
+msgid "option b\n"
+msgstr ""
+
+#: getopt.c:1045 getopt1.c:161
+#, c-format
+msgid "option c with value `%s'\n"
+msgstr ""
+
+#: getopt.c:1052 getopt1.c:172
+#, c-format
+msgid "?? getopt returned character code 0%o ??\n"
+msgstr ""
+
+#: getopt.c:1058 getopt1.c:178
+msgid "non-option ARGV-elements: "
+msgstr ""
+
+#: getopt.c:1060 getopt1.c:180
+#, c-format
+msgid "%s "
+msgstr ""
+
+#: getopt.c:1061 getopt1.c:133 getopt1.c:181
+msgid "\n"
+msgstr ""
+
+#: getopt1.c:113
+msgid "add"
+msgstr ""
+
+#: getopt1.c:114
+msgid "append"
+msgstr ""
+
+#: getopt1.c:115
+msgid "delete"
+msgstr ""
+
+#: getopt1.c:117
+msgid "create"
+msgstr ""
+
+#: getopt1.c:118
+msgid "file"
+msgstr ""
+
+#: getopt1.c:130
+#, c-format
+msgid "option %s"
+msgstr ""
+
+#: getopt1.c:132
+#, c-format
+msgid " with arg %s"
+msgstr ""
+
+#: getopt1.c:165
+#, c-format
+msgid "option d with value `%s'\n"
+msgstr ""

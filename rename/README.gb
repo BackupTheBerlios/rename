@@ -1,0 +1,63 @@
+This file contents Chinese GB simplified words.
+
+Rename 1.2
+----------
+
+Rename 是一个文件改名工具. 它可以把文件名大写化, 小写化, 以及对文件名中的
+部分字串作替换. Rename 用 C 写成, 因此它的速度比普通的脚本改名工具快很多,
+对大批量文件改名时效果尤为突出. Rename 支持用正规表达式进行字串搜索和替换,
+所以它的实际能力仅取决于用户对正规表达式的想象力. 如果用户不熟悉正规表达式
+也不要紧, 因为即使是简单的字串替换都可以满足大多数需要. 作为附加特性, Rename
+允许递归的处理目录和子目录下的指定文件名, 以及改变文件的属主. 后者可以单独
+使用.
+
+
+安装
+----
+
+下载 Rename 发布包后用 tar -zxf 展开, 然后:
+
+    ./configure
+    make
+    make install
+
+
+BUG 跟踪
+--------
+
+如果您使用中发现问题和错误, 请将错误细节递往 <xuming@bigfoot.com>
+
+
+示例
+----
+
+rename foo food
+  把文件 foo 改名为 food. 这个行为和 mv(1) 基本上一样.
+
+rename -lR *
+  把当前目录及其所有子目录下的全部文件名改成小写.
+
+rename -s/abc/xyz/gi *.c
+  把以 .c 结尾的文件名中所有出现的 abc 替换成 xyz, 忽略大小写.
+
+rename -vs/.c/.cpp/s *.c
+  把所有 .c 结尾的文件名改成 .cpp 结尾的文件名, 输出显示改名过程.
+
+rename -s/abc/12345/bi *
+  在当前目录下的所有文件名中, 搜索最后出现的 abc 并且替换成 12345.
+  忽略大小写.
+
+rename -o guest -R /home/custom
+  把 /home/custom 的属主改成 guest, guest 必须是系统中存在的用户. 如果
+  /home/custom 是目录, 则整个目录树, 包括其下文件的属主改成 guest.
+
+rename -s/^[A-Z].*file/nofile/r *
+  在文件名中寻找大写字母开头, file 结尾的子字串, 如果找得到, 就把它
+  替换成 nofile. 注意 -s 选项尾部的 r 表明 rename 将使用正规表达式
+  进行子字串搜索.
+
+rename -s/^[A-Z].+file/nofile/eg *
+  和上例类似, 由于使用了 + 匹配子和扩展正规表达式, 因此大写字母和 file 
+  之间要求至少有一个字符隔开. 除此之外, 所有出现的匹配子串都将被替换. 
+
+

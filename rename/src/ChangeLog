@@ -1,0 +1,10 @@
+
+2002-05-02  Xuming <xuming@users.sourceforge.net>
+
+	version 1.2 fix the bug of strncpy() by Joerg Desch's patch 
+	<jd@voelker-web.de>, which doesn't end strings with '\0'
+
+2001-08-29  Xuming <xuming@users.sourceforge.net>
+
+	version 1.1
+	

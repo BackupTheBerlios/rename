@@ -1,0 +1,68 @@
+
+Rename 1.2
+----------
+
+Rename is a file rename tool. It can upcase, lowcase filenames and can
+substitute substrings in filenames. Rename is written in C so it's quicker
+than most other renamers written in script, especially when changing large 
+numbers of filenames. Rename supports regular expression for matching and
+replacing substrings. Its power depends on the user's familiarity of it.
+But that's never mind if you know little about regular expression. Even
+the simplest string substitution works very well. As an additional function,
+rename can handle subdirectories recursive and change file's owner, the 
+latter could individually use.
+
+
+Install
+------
+
+Download rename distribution then unpack it with tar -zxf:
+
+    ./configure
+    make
+    make install
+
+
+BUGS reporting
+--------------
+
+Please report bugs to <xuming@bigfoot.com>
+
+
+Examples
+--------
+
+rename foo food
+  Change file 'foo' to 'food', just like mv(1) does.
+
+rename -lR *
+  To lowcase all filenames, directories and filenames and directories
+  under subdirectories.
+
+rename -s/abc/xyz/gi *.c
+  Substitute all 'abc' substrings appeared in C  sources  files  with
+  'xyz', ignoring case.
+
+rename -vs/.c/.cpp/s *.c
+  Change  C sources suffix to C++ sources suffix, with verbose information.
+
+rename -s/abc/12345/bi *
+  Find the last occurrence of 'abc'  and  replace  it  with  '12345',
+  ignoring case.
+
+rename -o guest -R /home/custom
+  change the owner of the file '/home/custom' to 'guest'. The 'guest' should
+  be an effective user in the current system. If '/home/custom' is a directory,
+  all files in this directory tree will hand to 'guest'.
+
+rename -s/^[A-Z].*file/nofile/r *
+  The target substring starts with a capital letter, and ends with string 
+  'file'. There are 0 or any numbers of characters between the capital letter
+  and 'file'. The substring, if encountered in filenames, will be replaced
+  with 'nofile'.
+  
+rename -s/^[A-Z].+file/nofile/eg *
+  Similar to last example, except it uses extended regular expression, such as
+  the '+' metacharacter, and replaces all matching strings with 'nofile'.
+
+

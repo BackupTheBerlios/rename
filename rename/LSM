@@ -1,0 +1,20 @@
+Begin4
+Title:          rename
+Version:        1.2
+Entered-date:   2002-05-06
+Description:    A file rename tool. It can rename, lowcase, upcase a large 
+                number of files and change their owners. It's a quick and 
+                powerful tool written in C with extended regular expression 
+                supporting for searching and substituting pattern strings 
+		in filenames.
+Keywords:       rename, regular expression
+Author:	        xuming@bigfoot.com (Xu, Ming)
+Maintained-by:  xuming@bigfoot.com (Xu, Ming)
+Primary-site:   ftp://ibiblio.org/pub/linux/utils/file
+                82K rename-1.2.tar.gz
+		1K  rename-1.2.lsm
+Alternate-site: http://xuhello.myetang.com
+Platforms:      Linux
+Copying-policy: GPL
+End
+
